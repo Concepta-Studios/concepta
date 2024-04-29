@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Campton';
+  src: local('Campton'),
+    url(./fonts/campton/CamptonLight.otf) format('opentype');
+  /* url(./fonts/campton/CamptonBlack.otf) format('opentype'),
+    url(./fonts/campton/CamptonBlackItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonBold.otf) format('opentype'),
+    url(./fonts/campton/CamptonBoldItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonBook.otf) format('opentype'),
+    url(./fonts/campton/CamptonBookItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonExtraBold.otf) format('opentype'),
+    url(./fonts/campton/CamptonExtraBoldItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonExtraLight.otf) format('opentype'),
+    url(./fonts/campton/CamptonExtraLightItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonLightItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonMedium.otf) format('opentype'),
+    url(./fonts/campton/CamptonMediumItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonSemiBold.otf) format('opentype'),
+    url(./fonts/campton/CamptonSemiBoldItalic.otf) format('opentype'),
+    url(./fonts/campton/CamptonThin.otf) format('opentype'),
+    url(./fonts/campton/CamptonThinItalic.otf) format('opentype'); */
+  font-weight: 300;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
