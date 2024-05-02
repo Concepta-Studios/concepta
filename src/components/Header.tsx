@@ -3,16 +3,15 @@ import Logo from './Logo';
 
 function Header() {
   return (
-    <nav className="absolute w-full">
-      <div className="grid gap-4 grid-cols-6 font-['Campton'] font-light">
+    <nav className="absolute w-full p-10">
+      <div className="font-['Campton'] font-light flex justify-between items-center">
         <div className="">
           <Logo />
         </div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div className="text-white">Contact</div>
-        <div className="text-white">Menu</div>
+        <div className="text-white flex text-xl">
+          <div className="mr-16">Contact</div>
+          <div>Menu</div>
+        </div>
       </div>
     </nav>
   );
