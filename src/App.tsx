@@ -10,7 +10,7 @@ function App() {
         <source src={Video} type="video/mp4" />
       </video>
       <Header />
-      <h1 className="text-2xl absolute text-white uppercase top-1/2 w-full text-center">
+      <h1 className="text-8xl absolute text-white/75 uppercase top-1/2 w-full text-center font-['AvenirBlack']">
         Digital solutions
       </h1>
       <div>Who needs a rocket?</div>
