@@ -1,4 +1,8 @@
-function PlusIcon() {
+interface PlusIconProps {
+  className?: string;
+}
+
+function PlusIcon({ className }: PlusIconProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +10,7 @@ function PlusIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="currentColor"
-      className="w-6 h-6"
+      className={'w-6 h-6 '.concat(className ?? '')}
     >
       <path
         strokeLinecap="round"

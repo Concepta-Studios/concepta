@@ -11,9 +11,9 @@ function Header() {
         </div>
         <div className="text-white flex text-xl">
           <div className="mr-16 cursor-pointer">Contact</div>
-          <div className="flex cursor-pointer">
+          <div className="flex cursor-pointer group">
             <span className="mr-1">Menu</span>
-            <PlusIcon />
+            <PlusIcon className="group-hover:rotate-45 transition ease-in-out duration-300" />
           </div>
         </div>
       </div>
