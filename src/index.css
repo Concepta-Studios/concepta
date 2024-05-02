@@ -27,6 +27,13 @@
 }
 
 @font-face {
+  font-family: 'Campton';
+  src: local('Campton'),
+    url(./fonts/campton/CamptonMedium.otf) format('opentype');
+  font-weight: 500;
+}
+
+@font-face {
   font-family: 'AvenirBlack';
   src: local('AvenirBlack'),
     url(./fonts/avenir/AvenirBlack.ttf) format('truetype');
