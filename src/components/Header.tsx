@@ -4,7 +4,7 @@ import PlusIcon from '../icons/PlusIcon';
 
 function Header() {
   return (
-    <nav className="absolute w-full p-10 top-0">
+    <nav className="max-w-screen-2xl p-10 m-auto">
       <div className="font-['Campton'] font-light flex justify-between items-center">
         <div className="cursor-pointer">
           <Logo />

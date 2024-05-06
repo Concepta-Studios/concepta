@@ -8,7 +8,12 @@ function App() {
   return (
     <>
       <div className="h-screen">
-        <video autoPlay muted loop className="h-full object-cover">
+        <video
+          autoPlay
+          muted
+          loop
+          className="absolute h-full w-full object-cover -z-[1]"
+        >
           <source src={Video} type="video/mp4" />
         </video>
         <Header />
