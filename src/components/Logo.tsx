@@ -27,7 +27,7 @@ function Logo() {
           id="Group_6"
           data-name="Group 6"
           transform="translate(0 0.001)"
-          clip-path="url(#clip-path)"
+          clipPath="url(#clip-path)"
         >
           <path
             id="Path_9"
