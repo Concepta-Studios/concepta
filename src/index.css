@@ -23,6 +23,13 @@
   font-weight: 900;
 }
 
+@font-face {
+  font-family: 'LexendDeca';
+  src: local('LexendDeca'),
+    url(./fonts/lexendDeca/LexendDecaLight.ttf) format('truetype');
+  font-weight: 300;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

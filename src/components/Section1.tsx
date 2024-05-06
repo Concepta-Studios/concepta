@@ -7,10 +7,13 @@ function Section1() {
       <div className="text-white text-2xl font-['Campton'] font-medium mb-6">
         Who needs a rocket?
       </div>
-      <div className="text-white flex text-xl font-['Campton'] font-medium cursor-pointer">
+      <a
+        className="text-white flex text-xl font-['Campton'] font-medium"
+        href="/services"
+      >
         <span className="mr-1">Our services</span>
         <ArrowLongRightIcon />
-      </div>
+      </a>
     </div>
   );
 }
