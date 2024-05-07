@@ -1,8 +1,9 @@
 import Header from './components/Header';
 import Video from './video/hero.mp4';
 import Section1 from './components/Section1';
-import './index.css';
 import Section2 from './components/Section2';
+import Section3 from './components/Section3';
+import './index.css';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Section1 />
       </div>
       <Section2 />
+      <Section3 />
     </>
   );
 }

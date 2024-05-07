@@ -5,7 +5,7 @@ import PencilIcon from '../icons/PencilIcon';
 
 function Section2() {
   return (
-    <div className=" bg-black text-white py-32 px-10">
+    <div className="bg-black text-white py-32 px-10">
       <div className="max-w-screen-2xl flex m-auto">
         <div className="w-3/5 pr-32">
           <h1 className="font-['AvenirBlack'] text-6xl pb-8">What we do</h1>
