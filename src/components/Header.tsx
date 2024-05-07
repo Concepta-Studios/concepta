@@ -7,7 +7,7 @@ function Header() {
     <nav className="max-w-screen-2xl p-10 m-auto">
       <div className="font-['Campton'] font-light flex justify-between items-center">
         <div className="cursor-pointer">
-          <Logo />
+          <Logo opacity={'0.738'} />
         </div>
         <div className="text-white flex text-xl">
           <div className="mr-16 cursor-pointer">Contact</div>

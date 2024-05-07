@@ -1,10 +1,16 @@
-function Logo() {
+interface LogoProps {
+  opacity?: string;
+  className?: string;
+}
+
+function Logo({ opacity, className }: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="79.613"
       height="90.824"
       viewBox="0 0 79.613 90.824"
+      className={className}
     >
       <defs>
         <clipPath id="clip-path">
@@ -21,7 +27,7 @@ function Logo() {
         id="Group_9"
         data-name="Group 9"
         transform="translate(0 -0.001)"
-        opacity="0.738"
+        opacity={opacity ?? '1'}
       >
         <g
           id="Group_6"
