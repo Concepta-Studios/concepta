@@ -10,7 +10,7 @@ function Section1() {
         </div>
         <a
           className="text-white flex text-xl font-['Campton'] font-medium"
-          href="/services"
+          href="#services"
         >
           <span className="mr-1">Our services</span>
           <ArrowLongRightIcon />

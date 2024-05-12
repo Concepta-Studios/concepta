@@ -6,9 +6,6 @@ import Section3 from './components/Section3';
 import Section4 from './components/Section4';
 import Section5 from './components/Section5';
 import Footer from './components/Footer';
-import './index.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 import Menu from './components/Menu';
 import { useState } from 'react';
 
