@@ -1,23 +1,28 @@
-import React from 'react';
 import Logo from './Logo';
 import PlusIcon from '../icons/PlusIcon';
 
-function Header() {
+interface HeaderProps {
+  toggleMenu: () => void;
+}
+
+function Header({ toggleMenu }: HeaderProps) {
   return (
-    <nav className="max-w-screen-2xl p-10 m-auto">
-      <div className="font-['Campton'] font-light flex justify-between items-center">
-        <div className="cursor-pointer">
-          <Logo opacity={'0.738'} />
-        </div>
-        <div className="text-white flex text-xl">
-          <div className="mr-16 cursor-pointer">Contact</div>
-          <div className="flex cursor-pointer group">
-            <span className="mr-1">Menu</span>
-            <PlusIcon className="group-hover:rotate-45 transition ease-in-out duration-300" />
+    <div className="absolute w-full z-[1]">
+      <nav className="max-w-screen-2xl p-10 m-auto">
+        <div className="font-['Campton'] font-light flex justify-between items-center">
+          <div className="cursor-pointer">
+            <Logo opacity={'0.738'} />
+          </div>
+          <div className="text-white flex text-xl">
+            <div className="mr-16 cursor-pointer">Contact</div>
+            <div className="flex cursor-pointer group" onClick={toggleMenu}>
+              <span className="mr-1">Menu</span>
+              <PlusIcon className="group-hover:rotate-45 transition ease-in-out duration-300" />
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </div>
   );
 }
 

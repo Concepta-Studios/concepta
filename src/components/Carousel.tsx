@@ -1,10 +1,7 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import Slider from 'react-slick';
-import './Carousel.css';
 
 function Carousel() {
-  const data = ['1', '2', '3'];
-
   const settings = {
     infinite: true,
     speed: 500,
@@ -15,7 +12,7 @@ function Carousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        {data.map((_, index) => (
+        {Array.from({ length: 3 }).map((_, index) => (
           <div key={index}>
             <div className="flex p-20">
               <div className="w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>

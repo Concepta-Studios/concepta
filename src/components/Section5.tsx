@@ -3,7 +3,7 @@ import DigitalSolutionsPic from '../pics/digital_solutions_ugly_screenshot.png';
 
 function Section5() {
   return (
-    <div className="bg-black text-white pb-32 flex">
+    <div id="contactUs" className="bg-black text-white pb-32 flex">
       <img
         className="w-1/2 mr-20"
         src={DigitalSolutionsPic}

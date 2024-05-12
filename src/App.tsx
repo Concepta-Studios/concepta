@@ -9,8 +9,16 @@ import Footer from './components/Footer';
 import './index.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import Menu from './components/Menu';
+import { useState } from 'react';
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
     <>
       <div className="h-screen">
@@ -22,8 +30,9 @@ function App() {
         >
           <source src={Video} type="video/mp4" />
         </video>
-        <Header />
+        <Header toggleMenu={toggleMenu} />
         <Section1 />
+        <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
       </div>
       <Section2 />
       <Section3 />
