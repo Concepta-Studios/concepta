@@ -7,9 +7,10 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
   return (
     <nav
       style={{
-        visibility: menuOpen ? 'visible' : 'hidden',
+        top: menuOpen ? 0 : '-100%',
+        transition: 'top .6s ease-in-out',
       }}
-      className="absolute w-full h-full top-0 bg-black opacity-50 font-['Campton'] font-light"
+      className="absolute w-full h-full bg-black opacity-50 font-['Campton'] font-light"
     >
       <div className="max-w-screen-2xl flex m-auto text-6xl text-white">
         <ul className="absolute top-1/2 -translate-y-1/2">
