@@ -1,5 +1,5 @@
-import ArrowUpRightIcon from '../icons/ArrowUpRightIcon';
 import Logo from './Logo';
+import SocialMediaLink from './SocialMediaLink';
 
 function Footer() {
   return (
@@ -20,14 +20,11 @@ function Footer() {
             <div className="font-bold text-xl mb-2">+1 407 555 555 55</div>
           </div>
           <div className="self-end font-['LexendDeca'] text-lg">
-            <a className="flex mb-2" href="https://instagram.com">
-              <span className="mr-2">Instagram</span>
-              <ArrowUpRightIcon className="font-bold" />
-            </a>
-            <a className="flex" href="https://linkedin.com">
-              <span className="mr-2">LinkedIn</span>
-              <ArrowUpRightIcon className="font-bold" />
-            </a>
+            <SocialMediaLink
+              label={'Instagram'}
+              href={'https://instagram.com'}
+            />
+            <SocialMediaLink label={'LinkedIn'} href={'https://linkedin.com'} />
           </div>
         </div>
       </nav>
