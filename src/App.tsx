@@ -30,7 +30,7 @@ function App() {
         >
           <source src={Video} type="video/mp4" />
         </video>
-        <Header toggleMenu={toggleMenu} />
+        <Header toggleMenu={toggleMenu} menuOpen={menuOpen} />
         <Section1 />
         <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
       </div>
