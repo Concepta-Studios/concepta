@@ -1,6 +1,6 @@
 import Carousel from './Carousel';
 
-function Section3() {
+function SectionCases() {
   return (
     <div id="caseStudies" className="bg-black text-white pb-32 px-10">
       <div className="max-w-screen-2xl m-auto">
@@ -13,4 +13,4 @@ function Section3() {
   );
 }
 
-export default Section3;
+export default SectionCases;
