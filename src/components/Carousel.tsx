@@ -1,22 +1,58 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import Slider from 'react-slick';
+import ChevronRightIcon from '../icons/ChevronRightIcon';
+import ChevronLeftIcon from '../icons/ChevronLeftIcon';
+
+function SampleNextArrow(props: any) {
+  const { className, onClick } = props;
+  return (
+    <ChevronRightIcon className={className} onClick={onClick} stroke="white" />
+  );
+}
+
+function SamplePrevArrow(props: any) {
+  const { className, onClick } = props;
+  return (
+    <ChevronLeftIcon className={className} onClick={onClick} stroke="white" />
+  );
+}
 
 function Carousel() {
   const settings = {
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    // slidesToScroll: 1,
     className: 'slider variable-width',
     centerMode: true,
     centerPadding: '60px',
     variableWidth: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    appendDots: (dots: any) => (
+      <div
+        style={{
+          borderRadius: '10px',
+          padding: '10px',
+        }}
+      >
+        {dots}
+      </div>
+    ),
+    customPaging: (i: number) => (
+      <div
+        style={{
+          width: '40px',
+          height: '5px',
+        }}
+      />
+    ),
   };
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="item bg-[#161618]" style={{ width: '1000px' }}>
+        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
           <div className="flex p-20">
             <div className="w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
             <div className="w-1/2 font-['LexendDeca']">
@@ -39,7 +75,7 @@ function Carousel() {
             </div>
           </div>
         </div>
-        <div className="item bg-[#161618]" style={{ width: '1000px' }}>
+        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
           <div className="flex p-20">
             <div className="w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
             <div className="w-1/2 font-['LexendDeca']">
@@ -62,7 +98,7 @@ function Carousel() {
             </div>
           </div>
         </div>
-        <div className="item bg-[#161618]" style={{ width: '1000px' }}>
+        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
           <div className="flex p-20">
             <div className="w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
             <div className="w-1/2 font-['LexendDeca']">
