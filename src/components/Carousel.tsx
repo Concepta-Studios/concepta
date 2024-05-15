@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import ChevronRightIcon from '../icons/ChevronRightIcon';
 import ChevronLeftIcon from '../icons/ChevronLeftIcon';
 
+import './Carousel.css';
+
 function SampleNextArrow(props: any) {
   const { className, onClick } = props;
   return (
@@ -23,30 +25,19 @@ function Carousel() {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    className: 'slider variable-width',
     centerMode: true,
     centerPadding: '60px',
     variableWidth: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
-    appendDots: (dots: any) => (
-      <div
-        style={{
-          borderRadius: '10px',
-          padding: '10px',
-        }}
-      >
-        {dots}
-      </div>
-    ),
-    customPaging: (i: number) => (
-      <div
-        style={{
-          width: '40px',
-          height: '5px',
-        }}
-      />
-    ),
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          variableWidth: false,
+        },
+      },
+    ],
   };
 
   return (
