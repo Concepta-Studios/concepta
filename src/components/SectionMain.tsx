@@ -1,6 +1,6 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 
-function Section1() {
+function SectionMain() {
   return (
     <div className="absolute bottom-0 sm:top-1/2 font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
       <div className="m-auto">
@@ -22,4 +22,4 @@ function Section1() {
   );
 }
 
-export default Section1;
+export default SectionMain;

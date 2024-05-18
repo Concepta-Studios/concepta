@@ -1,6 +1,6 @@
 import Header from './components/Header';
 import Video from './video/hero.mp4';
-import Section1 from './components/Section1';
+import SectionMain from './components/SectionMain';
 import Section2 from './components/Section2';
 import Section4 from './components/Section4';
 import Section5 from './components/Section5';
@@ -28,7 +28,7 @@ function App() {
           <source src={Video} type="video/mp4" />
         </video>
         <Header toggleMenu={toggleMenu} menuOpen={menuOpen} />
-        <Section1 />
+        <SectionMain />
         <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
       </div>
       <Section2 />

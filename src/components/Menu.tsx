@@ -12,11 +12,11 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
         top: menuOpen ? 0 : '-100%',
         transition: 'top .6s ease-in-out',
       }}
-      className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg"
+      className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg backdrop-contrast-100"
     >
-      <div className="max-w-screen-2xl flex m-auto text-white">
-        <div className="ml-20 sm:ml-0 absolute top-1/2 -translate-y-1/2 ">
-          <ul className="text-xl sm:text-6xl mb-36">
+      <div className="max-w-screen-2xl flex m-auto text-white h-full p-10">
+        <div className="flex flex-col justify-between w-full">
+          <ul className="text-4xl sm:text-6xl mt-48 sm:mt-96">
             <li className="mb-10">
               <a href="#caseStudies" onClick={toggleMenu}>
                 Case studies
@@ -33,7 +33,7 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
               </a>
             </li>
           </ul>
-          <div className="flex text-md sm:text-2xl">
+          <div className="flex justify-between text-md sm:text-2xl">
             <SocialMediaLink
               label={'Instagram'}
               href={'https://instagram.com'}
