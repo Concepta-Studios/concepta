@@ -8,18 +8,20 @@ function Footer() {
         <Logo className="absolute -top-[125px] left-1/2 -translate-x-1/2" />
         <div className="flex justify-between font-['LexendDeca']">
           <div className="">
-            <h1 className="font-['AvenirBlack'] text-5xl pb-8">
+            <h1 className="font-['AvenirBlack'] text-xl sm:text-5xl pb-8">
               Concepta studios
             </h1>
-            <div className="font-bold text-xl mb-2">
+            <div className="font-bold text-md sm:text-xl mb-2">
               Disney World, 114 41 Florida
             </div>
-            <div className="font-bold text-xl mb-2">
+            <div className="font-bold text-md sm:text-xl mb-2">
               info@conceptastudios.se
             </div>
-            <div className="font-bold text-xl mb-2">+1 407 555 555 55</div>
+            <div className="font-bold text-md sm:text-xl mb-2">
+              +1 407 555 555 55
+            </div>
           </div>
-          <div className="self-end font-['LexendDeca'] text-lg">
+          <div className="self-end font-['LexendDeca'] text-sm sm:text-lg">
             <SocialMediaLink
               label={'Instagram'}
               href={'https://instagram.com'}

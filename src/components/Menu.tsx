@@ -15,8 +15,8 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
       className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg"
     >
       <div className="max-w-screen-2xl flex m-auto text-white">
-        <div className="absolute top-1/2 -translate-y-1/2 ">
-          <ul className="text-6xl mb-36">
+        <div className="ml-20 sm:ml-0 absolute top-1/2 -translate-y-1/2 ">
+          <ul className="text-xl sm:text-6xl mb-36">
             <li className="mb-10">
               <a href="#caseStudies" onClick={toggleMenu}>
                 Case studies
@@ -33,7 +33,7 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
               </a>
             </li>
           </ul>
-          <div className="flex text-2xl">
+          <div className="flex text-md sm:text-2xl">
             <SocialMediaLink
               label={'Instagram'}
               href={'https://instagram.com'}

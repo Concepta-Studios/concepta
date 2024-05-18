@@ -3,8 +3,11 @@ import ChameleonPic from '../pics/chameleon.png';
 
 function Section4() {
   return (
-    <div id="aboutUs" className="bg-black text-white pb-32 flex">
-      <div className="w-2/5 pl-20">
+    <div
+      id="aboutUs"
+      className="bg-black text-white pb-32 flex flex-col sm:flex-row"
+    >
+      <div className="sm:w-2/5 pl-20">
         <h1 className="font-['AvenirBlack'] text-6xl pb-8">
           Lorem ipsum dolor
         </h1>
@@ -18,7 +21,7 @@ function Section4() {
           <ArrowLongRightIcon />
         </a>
       </div>
-      <img className="w-3/5" src={ChameleonPic} alt="Chameleon" />
+      <img className="sm:w-3/5" src={ChameleonPic} alt="Chameleon" />
     </div>
   );
 }

@@ -6,8 +6,8 @@ import PencilIcon from '../icons/PencilIcon';
 function Section2() {
   return (
     <div id="services" className="bg-black text-white py-32 px-10">
-      <div className="max-w-screen-2xl flex m-auto">
-        <div className="w-3/5 pr-32">
+      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto">
+        <div className="sm:w-3/5 sm:pr-32">
           <h1 className="font-['AvenirBlack'] text-6xl pb-8">What we do</h1>
           <div className="text-[#87868B] font-['LexendDeca'] font-light text-xl mb-12">
             We are dedicated to empowering small business owners by providing
@@ -26,7 +26,7 @@ function Section2() {
             </a>
           </div>
         </div>
-        <div className="w-2/5 font-['LexendDeca'] font-light text-xl">
+        <div className="sm:w-2/5 mt-8 sm:mt-0 font-['LexendDeca'] font-light text-xl">
           <div className="flex">
             <PencilIcon className="w-1/6 h-12 text-[#d1b104]" />
             <div className="w-5/6 pb-10">

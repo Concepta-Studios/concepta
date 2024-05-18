@@ -3,13 +3,16 @@ import DigitalSolutionsPic from '../pics/digital_solutions_ugly_screenshot.png';
 
 function Section5() {
   return (
-    <div id="contactUs" className="bg-black text-white pb-32 flex">
+    <div
+      id="contactUs"
+      className="bg-black text-white pb-32 flex flex-col sm:flex-row"
+    >
       <img
-        className="w-1/2 mr-20"
+        className="sm:w-1/2 mb-20 sm:mb-0 sm:mr-20"
         src={DigitalSolutionsPic}
         alt="Digital solutions"
       />
-      <div className="w-1/2 pr-20">
+      <div className="sm:w-1/2 pl-20 sm:pl-0 sm:pr-20">
         <h1 className="font-['AvenirBlack'] text-6xl pb-8">Aenean urna est</h1>
         <div className="text-[#87868B] font-['LexendDeca'] font-light text-xl mb-12">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
