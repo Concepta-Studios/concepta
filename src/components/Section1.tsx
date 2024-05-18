@@ -2,9 +2,9 @@ import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 
 function Section1() {
   return (
-    <div className="absolute top-1/2 font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
+    <div className="absolute bottom-0 sm:top-1/2 font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
       <div className="m-auto">
-        <h1 className="text-3xl sm:text-8xl uppercase text-white/75">
+        <h1 className="text-6xl sm:text-8xl uppercase text-white/75">
           Digital solutions
         </h1>
         <div className="text-white text-2xl font-['Campton'] font-medium mb-6">

@@ -1,16 +1,16 @@
 interface LogoProps {
   opacity?: string;
   className?: string;
+  width?: number;
+  height?: number;
 }
 
-function Logo({ opacity, className }: LogoProps) {
+function Logo({ opacity, className = '' }: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="79.613"
-      height="90.824"
-      viewBox="0 0 79.613 90.824"
-      className={className}
+      viewBox="0 0 80 90"
+      className={'w-[40px] h-[45px] sm:w-[80px] sm:h-[90px]'.concat(className)}
     >
       <defs>
         <clipPath id="clip-path">
