@@ -1,7 +1,7 @@
 import SectionMain from './components/SectionMain';
 import SectionServices from './components/SectionServices';
 import SectionAbout from './components/SectionAbout';
-import Section5 from './components/Section5';
+import SectionContact from './components/SectionContact';
 import Footer from './components/Footer';
 import SectionCases from './components/SectionCases';
 
@@ -12,7 +12,7 @@ function App() {
       <SectionServices />
       <SectionCases />
       <SectionAbout />
-      <Section5 />
+      <SectionContact />
       <Footer />
     </>
   );
