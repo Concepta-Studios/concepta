@@ -19,32 +19,51 @@ function SamplePrevArrow(props: any) {
   );
 }
 
+function Block() {
+  return (
+    <div className="bg-[#161618] rounded-3xl xl:w-[1000px]">
+      <div className="flex p-8 sm:p-20">
+        <div className="hidden sm:block w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
+        <div className="sm:w-1/2 font-['LexendDeca']">
+          <h2 className="text-xl sm:text-4xl font-bold mb-10">
+            Lorem ipsum dolor
+          </h2>
+          <div className="text-[#87868B] text-base sm:text-xl font-bold mb-6 sm:mb-10">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+            justo id nisi dignissim. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Maecenas eu justo id nisi dignissim.
+          </div>
+          <a
+            className="flex w-full sm:w-1/2 text-[#05C9C2] text-base sm:text-xl"
+            href="https://example.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <span className="mr-2">Visit homepage</span>
+            <ArrowLongRightIcon />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function Carousel() {
   const settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
-    // TODO: fix it
-    // centerMode: true,
-    // centerPadding: '60px',
-    // variableWidth: true,
+    centerMode: true,
+    variableWidth: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
-        breakpoint: 640,
+        breakpoint: 1280,
         settings: {
           centerMode: false,
           variableWidth: false,
-        },
-      },
-      {
-        breakpoint: 1200,
-        settings: {
-          // centerMode: true,
-          // centerPadding: '60px',
-          // variableWidth: true,
         },
       },
     ],
@@ -53,106 +72,9 @@ function Carousel() {
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
-          <div className="flex p-8 sm:p-20">
-            <div className="hidden sm:block w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
-            <div className="sm:w-1/2 font-['LexendDeca']">
-              <h2 className="text-xl sm:text-4xl font-bold mb-10">
-                Lorem ipsum dolor
-              </h2>
-              <div className="text-md sm:text-xl font-bold mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Maecenas eu justo id nisi
-                dignissim.
-              </div>
-              <a
-                className="flex w-1/2 text-[#05C9C2] text-md sm:text-xl"
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="mr-2">Visit homepage</span>
-                <ArrowLongRightIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
-          <div className="flex p-8 sm:p-20">
-            <div className="hidden sm:block w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
-            <div className="sm:w-1/2 font-['LexendDeca']">
-              <h2 className="text-xl sm:text-4xl font-bold mb-10">
-                Lorem ipsum dolor
-              </h2>
-              <div className="text-md sm:text-xl font-bold mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Maecenas eu justo id nisi
-                dignissim.
-              </div>
-              <a
-                className="flex w-1/2 text-[#05C9C2] text-md sm:text-xl"
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="mr-2">Visit homepage</span>
-                <ArrowLongRightIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="bg-[#161618] rounded-3xl" style={{ width: '1000px' }}>
-          <div className="flex p-8 sm:p-20">
-            <div className="hidden sm:block w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
-            <div className="sm:w-1/2 font-['LexendDeca']">
-              <h2 className="text-xl sm:text-4xl font-bold mb-10">
-                Lorem ipsum dolor
-              </h2>
-              <div className="text-md sm:text-xl font-bold mb-10">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Maecenas eu justo id nisi
-                dignissim.
-              </div>
-              <a
-                className="flex w-1/2 text-[#05C9C2] text-md sm:text-xl"
-                href="https://example.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <span className="mr-2">Visit homepage</span>
-                <ArrowLongRightIcon />
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* {Array.from({ length: 3 }).map((_, index) => (
-          <div key={index}>
-            <div className="flex p-20">
-              <div className="w-1/2 mr-16 bg-white rounded-3xl h-[400px]"></div>
-              <div className="sm:w-1/2 font-['LexendDeca']">
-                <h2 className="text-4xl font-bold mb-10">Lorem ipsum dolor</h2>
-                <div className="text-xl font-bold mb-10">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Maecenas eu justo id nisi dignissim. Lorem ipsum dolor sit
-                  amet, consectetur adipiscing elit. Maecenas eu justo id nisi
-                  dignissim.
-                </div>
-                <a
-                  className="flex w-1/2 text-[#05C9C2] text-xl"
-                  href="https://example.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <span className="mr-2">Visit homepage</span>
-                  <ArrowLongRightIcon />
-                </a>
-              </div>
-            </div>
-          </div>
-        ))} */}
+        {Array.from({ length: 3 }).map((_, index) => (
+          <Block />
+        ))}
       </Slider>
     </div>
   );

@@ -1,14 +1,14 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import ChameleonPic from '../pics/chameleon.png';
 
-function Section4() {
+function SectionAbout() {
   return (
     <div
       id="aboutUs"
       className="bg-black text-white pb-32 flex flex-col sm:flex-row"
     >
       <div className="sm:w-2/5 pl-20">
-        <h1 className="font-['AvenirBlack'] text-6xl pb-8">
+        <h1 className="font-['AvenirBlack'] text-3xl sm:text-6xl pb-8">
           Lorem ipsum dolor
         </h1>
         <div className="text-[#87868B] font-['LexendDeca'] font-light text-xl mb-12">
@@ -26,4 +26,4 @@ function Section4() {
   );
 }
 
-export default Section4;
+export default SectionAbout;
