@@ -17,7 +17,7 @@ function SectionMain() {
         autoPlay
         muted
         loop
-        className="absolute h-full w-full object-cover -z-[1]"
+        className="absolute h-screen w-full object-cover -z-[1]"
       >
         <source src={Video} type="video/mp4" />
       </video>
