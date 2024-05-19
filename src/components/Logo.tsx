@@ -10,7 +10,7 @@ function Logo({ opacity, className = '' }: LogoProps) {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 80 90"
-      className={'w-[40px] h-[45px] sm:w-[80px] sm:h-[90px]'.concat(className)}
+      className={'w-[40px] h-[45px] sm:w-[80px] sm:h-[90px] '.concat(className)}
     >
       <defs>
         <clipPath id="clip-path">
