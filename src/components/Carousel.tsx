@@ -76,7 +76,7 @@ function Carousel() {
     <div className="slider-container">
       <Slider {...settings}>
         {Array.from({ length: 3 }).map((_, index) => (
-          <Block />
+          <Block key={index} />
         ))}
       </Slider>
     </div>

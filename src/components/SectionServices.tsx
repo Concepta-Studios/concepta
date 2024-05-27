@@ -1,12 +1,10 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
-import BracketIcon from '../icons/BracketIcon';
-import CubeIcon from '../icons/CubeIcon';
-import PencilIcon from '../icons/PencilIcon';
+import ChameleonPic from '../pics/chameleon.png';
 
 function SectionServices() {
   return (
     <div id="services" className="bg-black text-white py-16 sm:py-32 px-10">
-      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto">
+      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto mb-32">
         <div className="sm:w-3/5 sm:pr-32 mb-20 sm:mb-0">
           <h1 className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8">
             What we do
@@ -28,42 +26,38 @@ function SectionServices() {
             </a>
           </div>
         </div>
-        <div className="sm:w-2/5 font-['LexendDeca'] font-light text-xl">
-          <div className="flex justify-between">
-            <PencilIcon className="w-[32px] h-[32px] sm:w-1/6 sm:h-12 text-[#d1b104]" />
-            <div className="w-5/6 pb-10">
-              <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3">
-                UX and UI design
-              </h2>
-              <div className="text-[#87868B] text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim.
-              </div>
-            </div>
+        <img
+          className="relative -right-10 sm:w-3/5 max-w-[400px]"
+          src={ChameleonPic}
+          alt="Chameleon"
+        />
+      </div>
+      <div className="font-['LexendDeca'] font-light text-xl max-w-screen-2xl flex flex-col sm:flex-row m-auto justify-between">
+        <div className="pb-10 max-w-[350px] sm:mr-20">
+          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d1b104]">
+            UX and UI design
+          </h2>
+          <div className="text-[#87868B] text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+            justo id nisi dignissim.
           </div>
-          <div className="flex justify-between">
-            <BracketIcon className="w-[32px] h-[32px] sm:w-1/6 sm:h-12 text-[#d16b04]" />
-            <div className="w-5/6 pb-10">
-              <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3">
-                Backend and frontend
-              </h2>
-              <div className="text-[#87868B] text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim.
-              </div>
-            </div>
+        </div>
+        <div className="pb-10 max-w-[350px] sm:mr-20">
+          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d16b04]">
+            Backend and frontend
+          </h2>
+          <div className="text-[#87868B] text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+            justo id nisi dignissim.
           </div>
-          <div className="flex justify-between">
-            <CubeIcon className="w-[32px] h-[32px] sm:w-1/6 sm:h-12 text-[#b903d1]" />
-            <div className="w-5/6 pb-10">
-              <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3">
-                AI experts
-              </h2>
-              <div className="text-[#87868B] text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Maecenas eu justo id nisi dignissim.
-              </div>
-            </div>
+        </div>
+        <div className="pb-10 max-w-[350px]">
+          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#b903d1]">
+            AI experts
+          </h2>
+          <div className="text-[#87868B] text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
+            justo id nisi dignissim.
           </div>
         </div>
       </div>
