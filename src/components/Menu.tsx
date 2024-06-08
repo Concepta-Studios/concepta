@@ -14,7 +14,7 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
       }}
       className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg backdrop-contrast-100"
     >
-      <div className="max-w-screen-2xl flex m-auto text-white h-full p-10">
+      <div className="max-w-screen-2xl m-auto flex text-white h-full p-10">
         <div className="flex flex-col justify-between w-full">
           <ul className="text-4xl sm:text-6xl mt-48 sm:mt-96">
             <li className="mb-10">

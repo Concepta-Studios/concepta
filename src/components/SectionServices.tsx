@@ -3,9 +3,12 @@ import ChameleonPic from '../pics/chameleon.png';
 
 function SectionServices() {
   return (
-    <div id="services" className="bg-black text-white py-16 sm:py-32 px-10">
-      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto mb-32">
-        <div className="sm:w-3/5 sm:pr-32 mb-20 sm:mb-0">
+    <div
+      id="services"
+      className="relative bg-black text-white py-16 sm:py-32 px-10"
+    >
+      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto mb-32 mt-[350px] sm:mt-0">
+        <div className="sm:w-3/5 sm:pr-32 mb-0">
           <h1 className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8">
             What we do
           </h1>
@@ -26,12 +29,12 @@ function SectionServices() {
             </a>
           </div>
         </div>
-        <img
-          className="relative -right-10 sm:w-3/5 max-w-[400px]"
-          src={ChameleonPic}
-          alt="Chameleon"
-        />
       </div>
+      <img
+        className="absolute right-0 top-16 sm:top-20 max-w-[300px] sm:max-w-[400px] xl:max-w-[450px]"
+        src={ChameleonPic}
+        alt="Chameleon"
+      />
       <div className="font-['LexendDeca'] font-light text-xl max-w-screen-2xl flex flex-col sm:flex-row m-auto justify-between">
         <div className="pb-10 max-w-[350px] sm:mr-20">
           <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d1b104]">
