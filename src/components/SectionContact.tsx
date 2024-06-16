@@ -14,20 +14,26 @@ function SectionContact() {
       />
       <div className="sm:w-1/2 sm:pl-20 sm:pr-20">
         <h1 className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8">
-          Aenean urna est
+          Kontakta oss
         </h1>
         <div className="text-[#87868B] font-['LexendDeca'] font-light text-base sm:text-xl mb-6 sm:mb-12">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eu
-          justo id nisi dignissim. Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Maecenas eu justo id nisi dignissim.
+          Oavsett om du redan vet vilken digital lösning du önskar eller är
+          osäker och behöver rådgivning är du välkommen att höra av dig till
+          oss.
         </div>
-        <a
+        <div className="text-[#87868B] font-['LexendDeca'] font-light text-base sm:text-xl mb-6 sm:mb-12">
+          Du kommer märka att vi är supertrevliga, kompetenta, lyhörda och lätta
+          att samarbeta med. Vi älskar att jobba med människor och att skapa
+          tillsammans!
+        </div>
+        <div>The form</div>
+        {/* <a
           className="flex w-1/2 text-[#05C9C2] text-base sm:text-xl"
           href="/lorem-ipsum"
         >
           <span className="mr-2">Lorem ipsum</span>
           <ArrowLongRightIcon />
-        </a>
+        </a> */}
       </div>
     </div>
   );
