@@ -1,4 +1,4 @@
-import SocialMediaLink from './SocialMediaLink';
+// import SocialMediaLink from './SocialMediaLink';
 
 interface MenuProps {
   menuOpen: boolean;
@@ -19,28 +19,28 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
           <ul className="text-4xl sm:text-6xl mt-48 sm:mt-96">
             <li className="mb-10">
               <a href="#caseStudies" onClick={toggleMenu}>
-                Case studies
+                Utvalda kunduppdrag
               </a>
             </li>
             <li className="mb-10">
               <a href="#aboutUs" onClick={toggleMenu}>
-                About us
+                Våra tjänster
               </a>
             </li>
             <li>
               <a href="#contactUs" onClick={toggleMenu}>
-                Contact us
+                Kontakta oss
               </a>
             </li>
           </ul>
-          <div className="flex justify-between text-md sm:text-2xl">
+          {/* <div className="flex justify-between text-md sm:text-2xl">
             <SocialMediaLink
               label={'Instagram'}
               href={'https://instagram.com'}
               className="mr-10"
             />
             <SocialMediaLink label={'LinkedIn'} href={'https://linkedin.com'} />
-          </div>
+          </div> */}
         </div>
       </div>
     </nav>

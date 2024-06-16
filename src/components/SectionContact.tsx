@@ -1,4 +1,4 @@
-import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
+// import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import DigitalSolutionsPic from '../pics/digital_solutions_ugly_screenshot.png';
 
 function SectionContact() {

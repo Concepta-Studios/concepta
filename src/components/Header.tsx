@@ -15,9 +15,11 @@ function Header({ toggleMenu, menuOpen }: HeaderProps) {
             <Logo opacity={'0.738'} />
           </div>
           <div className="text-white flex text-xl">
-            <div className="hidden sm:block mr-16 cursor-pointer">Contact</div>
+            <div className="hidden sm:block mr-16 cursor-pointer">
+              Kontakta oss
+            </div>
             <div className="flex cursor-pointer" onClick={toggleMenu}>
-              <span className="mr-1">Menu</span>
+              <span className="mr-1">Meny</span>
               <PlusIcon
                 style={{
                   transform: menuOpen ? 'rotate(45deg)' : 'rotate(0)',
