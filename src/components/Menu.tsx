@@ -1,11 +1,29 @@
-// import SocialMediaLink from './SocialMediaLink';
+interface MenuItemProps {
+  href: string;
+  label: string;
+  closeMenu(): void;
+}
+
+function MenuItem({ label, href, closeMenu }: MenuItemProps) {
+  return (
+    <li className="mb-10 last-of-type:mb-0">
+      <a
+        href={href}
+        className="origin-left transition-transform inline-block hover:scale-[1.2]"
+        onClick={closeMenu}
+      >
+        {label}
+      </a>
+    </li>
+  );
+}
 
 interface MenuProps {
   menuOpen: boolean;
-  toggleMenu(): void;
+  closeMenu(): void;
 }
 
-function Menu({ menuOpen, toggleMenu }: MenuProps) {
+function Menu({ menuOpen, closeMenu }: MenuProps) {
   return (
     <nav
       style={{
@@ -17,21 +35,21 @@ function Menu({ menuOpen, toggleMenu }: MenuProps) {
       <div className="max-w-screen-2xl m-auto flex text-white h-full p-10">
         <div className="flex flex-col justify-between w-full">
           <ul className="text-4xl sm:text-6xl mt-48 sm:mt-96">
-            <li className="mb-10">
-              <a href="#caseStudies" onClick={toggleMenu}>
-                Utvalda kunduppdrag
-              </a>
-            </li>
-            <li className="mb-10">
-              <a href="#aboutUs" onClick={toggleMenu}>
-                Våra tjänster
-              </a>
-            </li>
-            <li>
-              <a href="#contactUs" onClick={toggleMenu}>
-                Kontakta oss
-              </a>
-            </li>
+            <MenuItem
+              label={'Utvalda kunduppdrag'}
+              href={'#caseStudies'}
+              closeMenu={closeMenu}
+            />
+            <MenuItem
+              label={'Våra tjänster'}
+              href={'#aboutUs'}
+              closeMenu={closeMenu}
+            />
+            <MenuItem
+              label={'Kontakta oss'}
+              href={'#contactUs'}
+              closeMenu={closeMenu}
+            />
           </ul>
           {/* <div className="flex justify-between text-md sm:text-2xl">
             <SocialMediaLink

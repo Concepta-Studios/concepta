@@ -33,38 +33,43 @@ function SectionServices() {
         src={ChameleonPic}
         alt="Chameleon"
       />
-      <h1 className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8">
-        Några av våra tjänster
-      </h1>
-      <div className="font-['LexendDeca'] font-light text-xl max-w-screen-2xl flex flex-col sm:flex-row m-auto justify-between">
-        <div className="pb-10 max-w-[350px] sm:mr-20">
-          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d1b104]">
-            UX och design
-          </h2>
-          <div className="text-[#87868B] text-base">
-            Vi skapar väldesignade digitala lösningar. Innan produktion
-            genererar vi interaktiva prototyper så att vi kan optimera den
-            digitala upplevelsen - både för dig och dina kunder.
+      <div className="max-w-screen-2xl m-auto ">
+        <h1
+          id="aboutUs"
+          className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8"
+        >
+          Några av våra tjänster
+        </h1>
+        <div className="font-['LexendDeca'] font-light text-xl max-w-screen-2xl flex flex-col sm:flex-row m-auto justify-between">
+          <div className="pb-10 max-w-[350px] sm:mr-20">
+            <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d1b104]">
+              UX och design
+            </h2>
+            <div className="text-[#87868B] text-base">
+              Vi skapar väldesignade digitala lösningar. Innan produktion
+              genererar vi interaktiva prototyper så att vi kan optimera den
+              digitala upplevelsen - både för dig och dina kunder.
+            </div>
           </div>
-        </div>
-        <div className="pb-10 max-w-[350px] sm:mr-20">
-          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d16b04]">
-            Webbutveckling
-          </h2>
-          <div className="text-[#87868B] text-base">
-            Vi har erfarna utvecklare med spetskompetens inom en rad tekniker
-            och plattformar. Det gör att vi kan skräddarsy lösningar efter era
-            unika behov och önskemål.
+          <div className="pb-10 max-w-[350px] sm:mr-20">
+            <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#d16b04]">
+              Webbutveckling
+            </h2>
+            <div className="text-[#87868B] text-base">
+              Vi har erfarna utvecklare med spetskompetens inom en rad tekniker
+              och plattformar. Det gör att vi kan skräddarsy lösningar efter era
+              unika behov och önskemål.
+            </div>
           </div>
-        </div>
-        <div className="pb-10 max-w-[350px]">
-          <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#b903d1]">
-            CMS
-          </h2>
-          <div className="text-[#87868B] text-base">
-            Webbplatser ska inte bara vara snygga utan även vara säkra och enkla
-            att hantera och administrera. Vi ser till att du har rätt plattform
-            och verktyg för dina behov.
+          <div className="pb-10 max-w-[350px]">
+            <h2 className="font-['AvenirBlack'] text-2xl mb-2 sm:mt-3 text-[#b903d1]">
+              CMS
+            </h2>
+            <div className="text-[#87868B] text-base">
+              Webbplatser ska inte bara vara snygga utan även vara säkra och
+              enkla att hantera och administrera. Vi ser till att du har rätt
+              plattform och verktyg för dina behov.
+            </div>
           </div>
         </div>
       </div>

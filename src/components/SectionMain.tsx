@@ -39,7 +39,7 @@ function SectionMain() {
           </a>
         </div>
       </div>
-      <Menu menuOpen={menuOpen} toggleMenu={toggleMenu} />
+      <Menu menuOpen={menuOpen} closeMenu={toggleMenu} />
     </div>
   );
 }
