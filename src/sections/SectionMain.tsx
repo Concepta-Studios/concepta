@@ -24,14 +24,14 @@ function SectionMain() {
       <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
       <div className="absolute bottom-0 sm:bottom-[20%] font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
         <div className="m-auto">
-          <h1 className="text-5xl sm:text-8xl uppercase text-white/60">
+          <h1 className="text-5xl sm:text-8xl uppercase text-white/60 mb-2">
             Digitala lösningar
           </h1>
-          <div className="text-white text-xl sm:text-2xl font-['Campton'] font-medium mb-6">
+          <div className="text-white text-xl sm:text-2xl font-['Campton'] font-medium mb-10">
             Vi älskar att jobba med människor!
           </div>
           <a
-            className="text-white flex text-xl font-['Campton'] font-medium"
+            className="text-white flex text-base sm:text-xl font-['Campton'] font-medium"
             href="#services"
           >
             <span className="mr-1">Våra tjänster</span>
