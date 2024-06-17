@@ -9,8 +9,10 @@ function Logo({ opacity, className = '' }: LogoProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 80 90"
-      className={'w-[40px] h-[45px] sm:w-[80px] sm:h-[90px] '.concat(className)}
+      viewBox="0 0 80 91"
+      className={'w-[40px] h-[45.5px] sm:w-[80px] sm:h-[91px] '.concat(
+        className
+      )}
     >
       <defs>
         <clipPath id="clip-path">
@@ -33,7 +35,7 @@ function Logo({ opacity, className = '' }: LogoProps) {
           id="Group_6"
           data-name="Group 6"
           transform="translate(0 0.001)"
-          clipPath="url(#clip-path)"
+          clip-path="url(#clip-path)"
         >
           <path
             id="Path_9"
