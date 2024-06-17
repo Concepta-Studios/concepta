@@ -51,14 +51,6 @@ function Menu({ menuOpen, closeMenu }: MenuProps) {
               closeMenu={closeMenu}
             />
           </ul>
-          {/* <div className="flex justify-between text-md sm:text-2xl">
-            <SocialMediaLink
-              label={'Instagram'}
-              href={'https://instagram.com'}
-              className="mr-10"
-            />
-            <SocialMediaLink label={'LinkedIn'} href={'https://linkedin.com'} />
-          </div> */}
         </div>
       </div>
     </nav>

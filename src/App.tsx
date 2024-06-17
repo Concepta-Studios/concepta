@@ -1,8 +1,8 @@
-import SectionMain from './components/SectionMain';
-import SectionServices from './components/SectionServices';
-import SectionContact from './components/SectionContact';
+import SectionMain from './sections/SectionMain';
+import SectionServices from './sections/SectionServices';
+import SectionContact from './sections/SectionContact';
+import SectionCases from './sections/SectionCases';
 import Footer from './components/Footer';
-import SectionCases from './components/SectionCases';
 
 function App() {
   return (

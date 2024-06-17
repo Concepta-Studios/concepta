@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Video from '../video/hero.mp4';
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
-import Header from './Header';
-import Menu from './Menu';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
 
 function SectionMain() {
   const [menuOpen, setMenuOpen] = useState(false);

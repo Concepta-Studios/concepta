@@ -23,7 +23,6 @@ function Footer() {
           </div>
           <div className="text-[#05C9C2] flex justify-between w-full sm:w-auto sm:flex-col sm:self-end font-['LexendDeca'] text-sm sm:text-lg">
             <SocialMediaLink label={'Cookies'} href={'#'} />
-            {/* <SocialMediaLink label={'LinkedIn'} href={'https://linkedin.com'} /> */}
           </div>
         </div>
       </nav>
