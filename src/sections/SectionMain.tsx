@@ -5,10 +5,10 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 
 function SectionMain() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isMenuOpen, setisMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
+    setisMenuOpen(!isMenuOpen);
   };
 
   return (
@@ -21,13 +21,13 @@ function SectionMain() {
       >
         <source src={Video} type="video/mp4" />
       </video>
-      <Header toggleMenu={toggleMenu} menuOpen={menuOpen} />
-      <div className="absolute bottom-0 sm:top-1/2 font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
+      <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+      <div className="absolute bottom-0 sm:bottom-[20%] font-['AvenirBlack'] left-1/2 -translate-x-2/4 -translate-y-2/4 flex p-10 w-full">
         <div className="m-auto">
-          <h1 className="text-6xl sm:text-8xl uppercase text-white/60">
-            DIGITALA LÖSNINGAR
+          <h1 className="text-5xl sm:text-8xl uppercase text-white/60">
+            Digitala lösningar
           </h1>
-          <div className="text-white text-2xl font-['Campton'] font-medium mb-6">
+          <div className="text-white text-xl sm:text-2xl font-['Campton'] font-medium mb-6">
             Vi älskar att jobba med människor!
           </div>
           <a
@@ -39,7 +39,7 @@ function SectionMain() {
           </a>
         </div>
       </div>
-      <Menu menuOpen={menuOpen} closeMenu={toggleMenu} />
+      <Menu isMenuOpen={isMenuOpen} closeMenu={toggleMenu} />
     </div>
   );
 }

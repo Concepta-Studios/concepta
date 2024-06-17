@@ -19,15 +19,15 @@ function MenuItem({ label, href, closeMenu }: MenuItemProps) {
 }
 
 interface MenuProps {
-  menuOpen: boolean;
+  isMenuOpen: boolean;
   closeMenu(): void;
 }
 
-function Menu({ menuOpen, closeMenu }: MenuProps) {
+function Menu({ isMenuOpen, closeMenu }: MenuProps) {
   return (
     <nav
       style={{
-        top: menuOpen ? 0 : '-100%',
+        top: isMenuOpen ? 0 : '-100%',
         transition: 'top .6s ease-in-out',
       }}
       className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg backdrop-contrast-100"

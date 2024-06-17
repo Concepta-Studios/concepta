@@ -3,10 +3,10 @@ import PlusIcon from '../icons/PlusIcon';
 
 interface HeaderProps {
   toggleMenu: () => void;
-  menuOpen: boolean;
+  isMenuOpen: boolean;
 }
 
-function Header({ toggleMenu, menuOpen }: HeaderProps) {
+function Header({ toggleMenu, isMenuOpen }: HeaderProps) {
   return (
     <div className="absolute w-full z-[1]">
       <nav className="max-w-screen-2xl p-10 m-auto">
@@ -22,7 +22,7 @@ function Header({ toggleMenu, menuOpen }: HeaderProps) {
               <span className="mr-1">Meny</span>
               <PlusIcon
                 style={{
-                  transform: menuOpen ? 'rotate(45deg)' : 'rotate(0)',
+                  transform: isMenuOpen ? 'rotate(45deg)' : 'rotate(0)',
                 }}
                 className="transition ease-in-out duration-300"
               />
