@@ -2,6 +2,9 @@ import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import Slider from 'react-slick';
 import ChevronRightIcon from '../icons/ChevronRightIcon';
 import ChevronLeftIcon from '../icons/ChevronLeftIcon';
+import Customer1Pic from '../pics/Beijerstiftelsen_customer.png';
+import Customer2Pic from '../pics/Konsul_Bergh_customer.png';
+import Customer3Pic from '../pics/Cafe_Soderberg_customer.png';
 
 import './Carousel.css';
 
@@ -23,14 +26,19 @@ interface BlockProps {
   name: string;
   description: string;
   url: string;
+  pic: string;
 }
 
-function Block({ name, description, url }: BlockProps) {
+function Block({ name, description, url, pic }: BlockProps) {
   return (
     <div className="bg-[#161618] rounded-3xl xl:w-[1000px]">
       <div className="flex flex-col sm:flex-row px-8 py-8 sm:px-20 sm:py-20">
         <h2 className="text-xl sm:text-4xl font-bold mb-6 sm:hidden">{name}</h2>
-        <div className="sm:block sm:w-1/2 mb-6 sm:mb-0 sm:mr-16 bg-neutral-400 rounded-xl h-[180px] sm:h-[400px]"></div>
+        <img
+          className="sm:w-1/2 mb-6 sm:mb-0 sm:mr-16 rounded-xl"
+          src={pic}
+          alt={name}
+        />
         <div className="sm:w-1/2 font-['LexendDeca']">
           <h2 className="hidden sm:block text-xl sm:text-4xl font-bold mb-10">
             {name}
@@ -80,17 +88,21 @@ function Carousel() {
       description:
         'Konceptutveckling, rådgivning, UX och design samt framtagande av CMS.',
       url: 'Besök Konsul Berghs hemsida',
+      pic: Customer1Pic,
     },
     {
       name: 'Beijerstiftelsen',
       description:
         'Konceptutveckling, rådgivning, UX och design samt framtagande av CMS.',
       url: 'Besök Beijerstiftelsens hemsida',
+      pic: Customer2Pic,
     },
     {
       name: 'Café Söderberg',
-      description: 'UX och design samt framtagande av CMS.',
+      description:
+        'Snart lanserar vi Café Söderbergs nya hemsida där vi står för konceptutveckling, UX och design samt framtagande av CMS.',
       url: 'Besök Café Söderbergs hemsida',
+      pic: Customer3Pic,
     },
   ];
 
@@ -103,6 +115,7 @@ function Carousel() {
             name={item.name}
             description={item.description}
             url={item.url}
+            pic={item.pic}
           />
         ))}
       </Slider>
