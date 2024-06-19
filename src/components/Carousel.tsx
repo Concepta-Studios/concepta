@@ -2,8 +2,8 @@ import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 import Slider from 'react-slick';
 import ChevronRightIcon from '../icons/ChevronRightIcon';
 import ChevronLeftIcon from '../icons/ChevronLeftIcon';
-import Customer1Pic from '../pics/Beijerstiftelsen_customer.png';
-import Customer2Pic from '../pics/Konsul_Bergh_customer.png';
+import Customer1Pic from '../pics/Beijer_customer.png';
+import Customer2Pic from '../pics/KB_customer.png';
 import Customer3Pic from '../pics/Cafe_Soderberg_customer.png';
 
 import './Carousel.css';
@@ -31,15 +31,13 @@ interface BlockProps {
 
 function Block({ name, description, url, pic }: BlockProps) {
   return (
-    <div className="bg-[#161618] rounded-3xl xl:w-[1000px]">
-      <div className="flex flex-col sm:flex-row px-8 py-8 sm:px-20 sm:py-20">
-        <h2 className="text-xl sm:text-4xl font-bold mb-6 sm:hidden">{name}</h2>
-        <img
-          className="sm:w-1/2 mb-6 sm:mb-0 sm:mr-16 rounded-xl"
-          src={pic}
-          alt={name}
-        />
-        <div className="sm:w-1/2 font-['LexendDeca']">
+    <div className="bg-[#161618] rounded-3xl xl:w-[1000px] h-full">
+      <div className="flex flex-col sm:grid gap-6 sm:gap-12 grid-cols-2 px-8 py-8 sm:px-20 sm:py-20">
+        <h2 className="text-xl sm:text-4xl font-bold text-center sm:hidden">
+          {name}
+        </h2>
+        <img src={pic} alt={name} />
+        <div className="font-['LexendDeca']">
           <h2 className="hidden sm:block text-xl sm:text-4xl font-bold mb-10">
             {name}
           </h2>
