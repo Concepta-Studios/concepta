@@ -1,5 +1,4 @@
-// import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
-import DigitalSolutionsPic from '../pics/digital_solutions_ugly_screenshot.png';
+import ContactsPic from '../pics/contacts.png';
 
 function SectionContact() {
   return (
@@ -9,7 +8,7 @@ function SectionContact() {
     >
       <img
         className="relative -left-10 sm:w-1/2 mb-10 sm:mb-0 sm:mr-20"
-        src={DigitalSolutionsPic}
+        src={ContactsPic}
         alt="Digital solutions"
       />
       <div className="sm:w-1/2 sm:pl-20 sm:pr-20">
@@ -27,13 +26,6 @@ function SectionContact() {
           tillsammans!
         </div>
         <div>The form</div>
-        {/* <a
-          className="flex w-1/2 text-[#05C9C2] text-base sm:text-xl"
-          href="/lorem-ipsum"
-        >
-          <span className="mr-2">Lorem ipsum</span>
-          <ArrowLongRightIcon />
-        </a> */}
       </div>
     </div>
   );
