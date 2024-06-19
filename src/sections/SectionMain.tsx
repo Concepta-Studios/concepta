@@ -16,6 +16,7 @@ function SectionMain() {
       <video
         autoPlay
         muted
+        playsInline
         loop
         className="absolute h-screen w-full object-cover -z-[1]"
       >
