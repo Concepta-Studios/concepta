@@ -8,13 +8,13 @@ interface HeaderProps {
 
 function Header({ toggleMenu, isMenuOpen }: HeaderProps) {
   return (
-    <div className="absolute w-full z-[1]">
+    <div className="absolute w-full">
       <nav className="max-w-screen-2xl p-10 m-auto">
         <div className="font-['Campton'] font-light flex justify-between items-center">
           <div className="cursor-pointer">
             <Logo opacity={'0.738'} />
           </div>
-          <div className="text-white flex text-xl">
+          <div className="text-white flex text-xl z-[1]">
             <div className="hidden sm:block mr-16 cursor-pointer">
               Kontakta oss
             </div>

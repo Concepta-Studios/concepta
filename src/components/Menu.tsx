@@ -30,7 +30,7 @@ function Menu({ isMenuOpen, closeMenu }: MenuProps) {
         top: isMenuOpen ? 0 : '-100%',
         transition: 'top .6s ease-in-out',
       }}
-      className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-lg backdrop-contrast-100"
+      className="absolute w-full h-full font-['Campton'] font-light backdrop-blur-md backdrop-contrast-100"
     >
       <div className="max-w-screen-2xl m-auto flex text-white h-full p-10">
         <div className="flex flex-col justify-between w-full">
