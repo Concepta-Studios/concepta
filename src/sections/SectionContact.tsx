@@ -8,8 +8,9 @@ function SectionContact() {
     setEmail(event.target.value);
   };
 
-  const handleSubmit = async (event: any) => {
+  const handleSubmit = async (event: React.SyntheticEvent) => {
     event.preventDefault();
+
     const response = await fetch(
       'https://email-with-resend.shtabnoy.workers.dev/',
       {
