@@ -1,6 +1,32 @@
+import { useState } from 'react';
 import ContactsPic from '../pics/contacts.png';
 
 function SectionContact() {
+  const [email, setEmail] = useState<string>();
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubmit = async (event: any) => {
+    event.preventDefault();
+    const response = await fetch(
+      'https://email-with-resend.shtabnoy.workers.dev/',
+      {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        mode: 'cors',
+        body: JSON.stringify({
+          email,
+        }),
+      }
+    );
+    const parsedResponse = await response.json();
+    console.log(parsedResponse);
+  };
+
   return (
     <div
       id="contactUs"
@@ -25,7 +51,12 @@ function SectionContact() {
           att samarbeta med. Vi älskar att jobba med människor och att skapa
           tillsammans!
         </div>
-        <div>The form</div>
+        <div>
+          <form onSubmit={handleSubmit}>
+            <input type="email" name="email" onChange={handleEmailChange} />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
       </div>
     </div>
   );
