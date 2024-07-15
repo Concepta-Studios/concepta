@@ -1,14 +1,14 @@
 import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
-import ChameleonPic from '../pics/chameleon.png';
+import ChameleonPic from '../pics/chameleon3.png';
 
 function SectionServices() {
   return (
     <div
       id="services"
-      className="relative bg-black text-white py-16 sm:py-32 px-10"
+      className="relative bg-black text-white py-16 sm:py-32 px-10 overflow-hidden"
     >
-      <div className="max-w-screen-2xl flex flex-col sm:flex-row m-auto mb-32 mt-[350px] sm:mt-0">
-        <div className="sm:w-3/5 sm:pr-32 mb-0">
+      <div className="max-w-screen-2xl max-h-[900px] flex flex-col sm:flex-row m-auto">
+        <div className="sm:min-w-[560px] mb-0 sm:mr-20">
           <h1 className="font-['AvenirBlack'] text-4xl sm:text-6xl pb-8">
             Rätt kompetens till rätt pris
           </h1>
@@ -27,12 +27,8 @@ function SectionServices() {
             </a>
           </div>
         </div>
+        <img className="min-w-[1408px]" src={ChameleonPic} alt="Chameleon" />
       </div>
-      <img
-        className="absolute right-0 top-16 sm:top-20 max-w-[300px] sm:max-w-[400px] xl:max-w-[450px]"
-        src={ChameleonPic}
-        alt="Chameleon"
-      />
       <div className="max-w-screen-2xl m-auto ">
         <h1
           id="aboutUs"
