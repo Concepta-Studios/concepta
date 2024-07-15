@@ -5,7 +5,7 @@ function SectionServices() {
   return (
     <div
       id="services"
-      className="relative bg-black text-white py-16 sm:py-32 px-10 overflow-hidden"
+      className="bg-black text-white py-16 sm:py-32 px-10 overflow-hidden"
     >
       <div className="max-w-screen-2xl max-h-[900px] flex flex-col sm:flex-row m-auto">
         <div className="sm:min-w-[560px] mb-0 sm:mr-20">
