@@ -1,9 +1,14 @@
 import { useState } from 'react';
 import DevicesPic from '../pics/devices.png';
+import ArrowLongRightIcon from '../icons/ArrowLongRightIcon';
 
 function SectionContact() {
-  const [email, setEmail] = useState<string>();
+  const [name, setName] = useState<string>('');
+  const [email, setEmail] = useState<string>('');
 
+  const handleNameChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setName(event.target.value);
+  };
   const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(event.target.value);
   };
@@ -47,10 +52,32 @@ function SectionContact() {
             lätta att samarbeta med. Vi älskar att jobba med människor och att
             skapa tillsammans!
           </div>
-          <div>
+          <div className="font-['LexendDeca'] text-base">
             <form onSubmit={handleSubmit}>
-              <input type="email" name="email" onChange={handleEmailChange} />
-              <input type="submit" value="Submit" />
+              <div className="flex justify-between items-center w-[260px] mb-4">
+                <label htmlFor="name">Namn: </label>
+                <input
+                  className="text-black p-1 rounded"
+                  type="text"
+                  name="name"
+                  onChange={handleNameChange}
+                  value={name}
+                />
+              </div>
+              <div className="flex justify-between items-center w-[260px] mb-4">
+                <label htmlFor="email">E-post: </label>
+                <input
+                  className="text-black p-1 rounded"
+                  type="email"
+                  name="email"
+                  onChange={handleEmailChange}
+                  value={email}
+                />
+              </div>
+              <button type="submit" className="text-[#05C9C2] flex">
+                <span className="mr-2">Skicka</span>
+                <ArrowLongRightIcon />
+              </button>
             </form>
           </div>
         </div>
